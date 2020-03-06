@@ -4,6 +4,8 @@ package utility;
 import model.User;
 
 
+
+//class extend and implemets
 public  class EligibiltyCheck  extends  BasicEligibility implements EligibilityInterface
 {
 
@@ -31,6 +33,7 @@ public  class EligibiltyCheck  extends  BasicEligibility implements EligibilityI
 		return false;
 	}
 
+	
 	
 	public	boolean basicEligibilityCheck(User user)
 	{

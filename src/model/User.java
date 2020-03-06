@@ -1,6 +1,7 @@
 //progression 1
 package model;
 
+//user class
 public class User
 {
 	//instance variables
@@ -10,17 +11,9 @@ public class User
 	private int height ;
 	private int weight;
 	private String country;
-	//constructor
-	public User(String name, String number, int age, int height, int weight, String country)
-{
-		super();
-		this.name = name;
-		this.number = number;
-		this.age = age;//
-		this.height = height;
-		this.weight = weight;
-		this.country = country;
-	}
+	
+	
+	//getter and setter
 	public String getName() {
 		return name;
 	}
@@ -60,7 +53,17 @@ public class User
 	
 	
 	
-	
+	//constructor
+		public User(String name, String number, int age, int height, int weight, String country)
+	{
+			super();
+			this.name = name;
+			this.number = number;
+			this.age = age;//
+			this.height = height;
+			this.weight = weight;
+			this.country = country;
+		}
 	
 	
 	

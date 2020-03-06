@@ -2,6 +2,8 @@
 
 package utility;
 import model.*;
+
+//interface class
 interface EligibilityInterface
 {
 		boolean checkUser(User user);
