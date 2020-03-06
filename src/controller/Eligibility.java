@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import utility.EligibiltyCheck;
 
+
 @WebServlet(urlPatterns= {"/eligiblemain"})
 public class Eligibility extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -19,12 +20,17 @@ public class Eligibility extends HttpServlet {
 
 	String points=request.getParameter("points");
 	
+	System.out.println(points);
+	
 	// Create an object for EligibiltyCheck
 	// Call the checkQuizAnswer method and pass the argument as points.
 	// Store the return value in a variable called spaceEligible.
-		
+	 EligibiltyCheck ec=new EligibiltyCheck();
+	 boolean spaceEligible=ec.checkQuizAnswer(points);
 	
-	if(false)
+		System.out.println(spaceEligible);
+	
+	if(spaceEligible)
 	{
 		RequestDispatcher rd=this.getServletContext().getRequestDispatcher("/WEB-INF/views/success.html");
 		rd.forward(request, response);	
