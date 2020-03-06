@@ -26,7 +26,7 @@ public  class EligibiltyCheck  extends  BasicEligibility implements EligibilityI
 	public boolean checkQuizAnswer(String points)
 	{
 		int score=Integer.parseInt(points);
-		if(score>50)
+		if(score>5)
 			return true;
 		return false;
 	}
